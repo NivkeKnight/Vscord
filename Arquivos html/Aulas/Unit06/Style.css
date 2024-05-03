@@ -41,3 +41,54 @@ ul.horizontal {
 .horizontal li a:hover {
     background-color: #111111;
 }
+ ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #eeeeee;
+    width: 100%;
+    display: none;
+ }
+ ul.submenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #eeeeee;
+    width: 100%;
+    display: none;
+ }
+ .menu li{
+    float: left;
+    width: auto;
+    position: relative;
+}
+.submenu li{
+    float: left;
+    width: 200px;
+    position: relative;
+}
+.menu li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.submenu li a {
+    display: block;
+    color: #000000;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu li:hover > ul.submenu{
+    display: block;
+}
+.menu li a:hover {
+    background-color: #111111;
+}
+.submenu li a:hover {
+    background-color: #000000;
+}
