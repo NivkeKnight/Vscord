@@ -9,3 +9,6 @@ console.log(Altura)
 var nome = "Ana";
 var sobrenome = "silva"
 sobrenome = "rocha"
+for(var i = 0 ; i < 5 ; i++){
+        console.log("Bom dia");
+}

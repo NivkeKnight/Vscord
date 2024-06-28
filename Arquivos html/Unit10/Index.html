@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit10</title>
+</head>
+
+<body>
+    <div id="if">
+    <input type="password" id="senha">
+    <button onclick="
+                    var pass = document.getElementById('senha').value" ; console.log(pass); if(pass='123456' ){
+        alert(Bem vindo!) }else{ alert( tente novamente.) }>
+        Entrar
+    </button>
+    </div>
+    <div id="switch">
+        <select id="opções">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select>
+        <button
+            onclick="  
+                var op = document.getElementById(' opções ').value;
+                console.log(op);
+                switch(op){
+                    
+                }  
+            "
+        ></button>
+                Selecionar
+        </button>
+    </div>
+            <div id="while">
+                <button onclick="
+                    var num = math.floor(Math.random() * 10);   
+                    console.log(num);
+                    var htmlFinal = '';
+
+                    while(num != 2){
+                        htmlFinal += num;
+                        num = Math.floor(Math.random() * 10);
+                    }
+                    document.getElementById('Numero').innerHTML = htmlFinal;
+                    ">
+                    Gerar
+                </button>
+
+
+            </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
