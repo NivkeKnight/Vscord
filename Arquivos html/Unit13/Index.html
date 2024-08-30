@@ -6,9 +6,23 @@
     <title>Unit 13 - JQuerry e Objetos  </title>
 </head>
 <body>
-    
+    <h2> Carrinho de Compras</h2>
+    Nome do item: <input id="nomeItem">
+    Quantidade: <input id="Quantidade">
+    Preço: <input id="Preço">
+     <button onclick="adicionarItem()">Adicionar Item</button>
+      <table border="1" id="tabelaitens">
+        <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+        </table>
 
-
+        <button onclick="fecharcompra">Fechar Compra</button>
+        <label id="fechamento"></label>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>

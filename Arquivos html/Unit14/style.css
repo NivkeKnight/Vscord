@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: bisque;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://turbologo.com/articles/wp-content/uploads/2019/11/star-wars-1977-logo.png.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}   
+h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: yellow;
+    text-shadow: 2px 2px 8px yellow;
+
+}
+button{
+    background-color: yellowgreen;
+    border: none;
+    padding: 10px 20px;
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    transition: backgroun-color 0.3s, color 0,3s;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 8px;
+}
+button:hover{
+    background-color: yellow;
+    color: black;
+
+}
+input{
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fc0;
+    margin-top: 10px;
+
+}
+label{
+    font-weight: bold;
+    color: #fc0;
+
+}
+table{
+    width: 100% ;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #222;
+    color: #f5f5f5;
+}
+th, td{
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ffcc00;
+
+}
+th{
+    background-color: #444;
+    color: #ffcc00;
+    text-transform: uppercase;
+    font-size: large;
+}
+td{
+    background-color: #333;
+}
+tr:hover{
+    background-color: #555;
+
+}
+#personagemDetalhes {
+    background-color: #222;
+    border: 2px solid #ffcc00;
+    border-radius:  10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #f5f5f5;
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 10px black;
+}
+#personagemDetalhes h3 {
+    text-align: center;
+    color: #ffcc00;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+}
+#personagemDetalhes ul {
+    list-style: none;
+    padding: 0;
+}
+.rodape {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 10px; /* Separa 
+}
+
+.rodape p {
+    margin: 5px 0; /* Margem entre os parágrafos */
+}
+
+.rodape a {
+    color: #ffcc00; /* Cor dos links no rodapé */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.rodape a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}

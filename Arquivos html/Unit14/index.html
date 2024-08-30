@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2> API - Star Wars</h2>
+    <div>
+        <button id="BotãoBuscarPersonagem">
+            Buscar personagem aleatorio
+
+        </button>
+        personagem escolhido:
+        <label id="personagemaleatorio"></label>
+        <div id="personagemDetalhes">
+            <h3>Detalhes do Personagem</h3>
+            <ul>
+                <li><strong> Nome:</strong> <span id="NomePersonagem"></span></li>
+                <li><strong> Altura:</strong> <span id="Altura"></span></li>
+                <li><strong> Massa:</strong> <span id="Massa"></span></li>
+                <li><strong> Cor do Cabelo:</strong> <span id="CorCabeloPersonagem"></span></li>
+                <li><strong> Cor dos Olhos:</strong> <span id="CorOlhoPersonagem"></span></li>
+                <li><strong> Ano de Nascimento:</strong> <span id="AnoPersonagem"></span></li>
+                <li><strong> Gênero:</strong> <span id="GêneroPersonagem"></span></li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" id="BuscarFilmeporNomePersonagem">
+            <button id="BotãoBuscarFilme">
+                Buscar filme por nome de personagem
+            </button>
+            Filme de <label id="labelFilme"></label>
+
+        </div>
+        <div>
+            <table id="TabelaFilmes" border="1">
+                <tr>
+                    <th>Nome</th>
+                    <th>Episodio</th>
+                    <th>Diretor</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <footer class="rodape">
+        <p>Estudando API</p>
+        <p>&copy; 2024 Site de Estudo</p>
+        <p>Esse site foi criado pelo Kevin</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
