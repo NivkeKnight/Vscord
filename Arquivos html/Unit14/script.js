@@ -3,7 +3,7 @@
 $("BotãoBuscarPersonagem").click(buscapersonagemaleatorio);
  
 function buscapersonagemaleatorio(){
-    $.get("https://swapi.dev/api/people/1") , preenchercardpersonagem
+    $.get("https://swapi.dev/api/people/1" , preenchercardpersonagem)
 }
 function preenchercardpersonagem(data){
     $("personagemaleatorio").text(data.name)
