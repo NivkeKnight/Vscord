@@ -104,7 +104,7 @@ tr:hover{
     padding: 20px; /* Espaçamento interno */
     font-family: Arial, sans-serif; /* Fonte do texto */
     font-size: 14px; /* Tamanho da fonte */
-    margin-top: 10px; /* Separa 
+    margin-top: 10px; /* Separa  */
 }
 
 .rodape p {
@@ -119,3 +119,4 @@ tr:hover{
 .rodape a:hover {
     text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
+
