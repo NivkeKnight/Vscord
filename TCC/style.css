@@ -1,0 +1,145 @@
+/* Estilo geral */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1b1b1b; /* Cor do carvão ao redor da fogueira */
+    color: #f4e2c1; /* Cor quente, representando a luz da fogueira */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2d2d2d; /* Cinza escuro, representando pedras ao redor da fogueira */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff4500; /* Laranja vivo, para lembrar as chamas da fogueira */
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #000; /* Sombra para destacar o título */
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4e2c1; /* Cor suave que contrasta com o fundo */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff4500; /* Efeito de hover: cor de chama mais intensa */
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section#item-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+section#item-list ul li {
+    background-color: #333; /* Fundo escuro para destacar os itens */
+    color: #f4e2c1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(255, 69, 0, 0.5); /* Efeito de luz da fogueira */
+    transition: transform 0.2s;
+}
+
+section#item-list ul li:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #2d2d2d;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #f4e2c1;
+}
+
+/* Estilo específico para títulos e parágrafos */
+h2 {
+    color: #ff4500; /* Títulos em laranja vivo */
+}
+
+p {
+    color: #f4e2c1; /* Texto principal suave */
+}
+/* Estilos para a pesquisa de personagens */
+#character-search {
+    padding: 20px;
+    text-align: center;
+}
+
+#character-search input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff4500;
+}
+
+#character-search button {
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#character-search button:hover {
+    background-color: #e63900;
+}
+
+#character-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#character-list ul li {
+    background-color: #333;
+    color: #f4e2c1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(255, 69, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+#character-list ul li:hover {
+    transform: scale(1.05);
+}
+.img-transparente {
+    width: 500px; /* Define uma largura fixa maior */
+    height: auto; /* Mantém a proporção da imagem */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    margin-top: 20px; /* Espaçamento superior */
+}

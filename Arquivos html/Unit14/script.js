@@ -16,25 +16,26 @@ function preenchercardpersonagem(data){
     $("#AnoPersonagem").text(data.birth_year)
     $("#GêneroPersonagem").text(data.gender)
 }
-$("#botaoBuscarfilmeId").click(BuscarFilmeporNomePersonagem)
+$("#BotaoBuscarfilme").click(BuscarFilmeporNomePersonagem)
 function BuscarFilmeporNomePersonagem() {
-    var nome = $("#buscarfilmepornomepersonagem").val();
+    var nome = $("#BuscarFilmeporNomePersonagem").val();
     
     $.get ("https://swapi.dev/api/people/?search=" + nome, popularTabela)
 }
 function popularTabela(data) {
-    $("#labelFilme").text(data.result[0].name);
-    $("tabelaFilmes").find("tr:gt(0)").remove();
-    for (var i = 0; i < data.result[0].films.length; i++)
+    $("#labelFilme").text(data.results[0].name);
+    $("#TabelaFilmes").find("tr:gt(0)").remove();
+    for (var i = 0; i < data.results[0].films.length; i++)
     {
-        $.get(data.result[0].films[i], crialinha)
+        $.get(data.results[0].films[i], crialinha)
     }
 }
 function crialinha(data){
+    console.log("a")
     var htmlFinal = 
         "<tr><td>" + data.title + "</td>"+
         "<td>" + data.episode_id + "</td>"+
-        "<td>" + data.director + "<td> </tr>";
-    $("tabelaFilmes").append(htmlFinal)    
+        "<td>" + data.director + "</td> </tr>";
+    $("#TabelaFilmes").append(htmlFinal)    
 
 }
