@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personagens de Dark Souls</title>
+    <title>Itens de Dark Souls</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
-        <h1>Personagens de Dark Souls</h1>
+        <h1>Itens de Dark Souls</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="items.html">Itens</a></li>
-                <li><a href="characters.html">Personagens</a></li>
             </ul>
         </nav>
     </header>
+
     <section>
         <h2>Explore o mundo de Dark Souls</h2>
-        <!-- Imagem sem fundo -->
-        <img src="Imagens\download (5).jpeg" class="img-transparente">
     </section>
 
-    <section id="character-search">
-        <h2>Buscar Personagem</h2>
-        <input type="text" id="search-input" placeholder="Digite o nome do personagem">
-        <button id="search-button">Buscar</button>
+    <section id="item-search">
+        <h2>Buscar Item</h2>
+        <input type="text" id="inputItem" placeholder="Digite o nome do item">
+        <button id="pesquisar">Pesquisar</button>  
     </section>
 
-    <section id="character-list">
-        <h2>Lista de Personagens</h2>
-        <ul id="lista-de-personagens">
-            <!-- Personagens carregados dinamicamente aqui -->
-        </ul>
+    <section id="item-list">
+        <h2>Lista de Itens</h2>
+        <div id="resultados"></div>
+ 
     </section>
 
     <footer>

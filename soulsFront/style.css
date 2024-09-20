@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+  }
+
+  #pesquisar {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .resultado {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .resultado img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  .resultado div {
+    display: flex;
+    flex-direction: column;
+  }
+  .resultado div h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .resultado div p {
+    margin: 5px 0;
+    color: #555;
+  }
+

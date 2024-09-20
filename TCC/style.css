@@ -90,41 +90,50 @@ h2 {
 p {
     color: #f4e2c1; /* Texto principal suave */
 }
-/* Estilos para a pesquisa de personagens */
-#character-search {
+
+/* Estilos para a pesquisa de itens */
+#item-search {
     padding: 20px;
     text-align: center;
 }
 
-#character-search input {
+#item-search input {
     padding: 10px;
     width: 300px;
     margin-right: 10px;
     border-radius: 5px;
     border: 1px solid #ff4500;
+    background-color: #333;
+    color: #f4e2c1;
 }
 
-#character-search button {
+#item-search input::placeholder {
+    color: #f4e2c1; /* Placeholder com a cor do tema */
+}
+
+#item-search button {
     padding: 10px 20px;
     background-color: #ff4500;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#character-search button:hover {
+#item-search button:hover {
     background-color: #e63900;
 }
 
-#character-list ul {
+/* Lista de itens */
+#item-list ul {
     list-style: none;
     padding: 0;
     text-align: left;
     margin-top: 20px;
 }
 
-#character-list ul li {
+#item-list ul li {
     background-color: #333;
     color: #f4e2c1;
     margin: 10px;
@@ -134,12 +143,103 @@ p {
     transition: transform 0.2s;
 }
 
-#character-list ul li:hover {
+#item-list ul li:hover {
     transform: scale(1.05);
 }
+
+/* Imagem transparente */
 .img-transparente {
     width: 500px; /* Define uma largura fixa maior */
     height: auto; /* Mantém a proporção da imagem */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
     margin-top: 20px; /* Espaçamento superior */
+}
+.resultado {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d; /* Fundo escuro para simular o ambiente sombrio de Dark Souls */
+    color: #f4e2c1; /* Cor do texto suave */
+    margin: 10px 0; /* Espaçamento entre os itens */
+    padding: 15px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para criar profundidade */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves ao passar o mouse */
+}
+
+.resultado:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(255, 69, 0, 0.5); /* Efeito de iluminação mais intenso */
+}
+
+.resultado img {
+    width: 80px; /* Tamanho fixo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra na imagem */
+}
+
+.resultado div {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado h3 {
+    margin: 0;
+    color: #ff4500; /* Cor laranja intensa para o título do item */
+    font-size: 18px;
+    text-shadow: 1px 1px 4px #000; /* Sombra no texto do título */
+}
+
+.resultado p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #f4e2c1;
+}
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('033c760b9794b496ba8570114af81111d78f06a8_hq.gif'); /* Caminho para o GIF */
+    background-size: cover; /* O GIF cobre todo o fundo */
+    background-position: center; /* Centraliza o GIF no fundo */
+    background-repeat: no-repeat; /* O GIF não repete */
+    background-attachment: fixed; /* O fundo permanece fixo ao rolar a página */
+    height: 100vh; /* Altura do fundo cobrindo toda a tela */
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima do fundo */
+    color: #f4e2c1; /* Cor do texto */
+    padding: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade */
+    z-index: 0;
+}
+#item-search, #character-search {
+    position: relative;
+    z-index: 2; /* Garante que o campo de busca e o botão fiquem acima do fundo */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Mantém o GIF de fundo atrás de todos os elementos */
+    background-image: url('Imagens/fogueira-animada.gif');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Mantém o fundo desfocado */
 }
