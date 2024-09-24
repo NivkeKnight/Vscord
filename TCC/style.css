@@ -243,3 +243,36 @@ body::before {
     background-position: center;
     filter: blur(8px); /* Mantém o fundo desfocado */
 }
+/* Estilo do fundo animado (GIF ou partículas) */
+#particles-js, #fogo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Certificar que está atrás dos elementos interativos */
+    pointer-events: none; /* Evitar que o fundo capture eventos de clique */
+}
+
+/* Garantir que os elementos interativos estejam acima do fundo */
+header, section, footer {
+    position: relative; /* Assegurar que estejam no fluxo normal da página */
+    z-index: 1; /* Maior que o do fundo */
+}
+
+/* Garantir que os botões e inputs estejam na frente */
+button, input {
+    position: relative; /* Para garantir que estejam na frente */
+    z-index: 10; /* Z-index mais alto que o resto para interatividade */
+}
+
+/* Se estiver usando algum efeito de fogo ou animação na frente */
+#fire-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Mantém o efeito de fogo atrás dos elementos interativos */
+    pointer-events: none; /* Não captura eventos de clique */
+}
