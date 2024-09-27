@@ -2,16 +2,35 @@ const divResultados = $("#resultados");
 
 $("#pesquisar").click(pesquisarItem);
 
-function pesquisarItem() {
-    var nome = $("#inputItem").val();
-    console.log("teste")
-    $.get("http://localhost:4000/api/items?search=" + nome, popularLista);
+// Função para pesquisar item
+function pesquisarItem(nome) {
+    $.get("http://localhost:4000/api/items?search=" + nome)
+        .done(data => {popularLista(data)
+          console.log(data)
+        })
+        .fail(() => {
+            alert("Erro ao buscar itens. Tente novamente.");
+        });
 }
 
-function popularLista(data){
-    console.log(data)
+// Função para pesquisar arma
+function pesquisarArma(nome) {
+    $.get("http://localhost:4000/api/weapons?search=" + nome)
+        .done(data => popularLista(data))
+        .fail(() => {
+            alert("Erro ao buscar armas. Tente novamente.");
+        });
+}
 
-    divResultados.html('')
+// Função comum para exibir os resultados de itens ou armas
+function popularLista(data) {
+    console.log(data);
+    divResultados.html('');  // Limpa a div de resultados
+
+    if (data.length === 0) {
+        divResultados.append("<p>Nenhum resultado encontrado.</p>");
+        return;
+    }
 
     data.forEach(item => {
         const resultado = document.createElement('div');

@@ -276,3 +276,79 @@ button, input {
     z-index: 0; /* Mantém o efeito de fogo atrás dos elementos interativos */
     pointer-events: none; /* Não captura eventos de clique */
 }
+/* Estilos básicos para a lista de armas */
+#lista-de-armas li {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-bottom: 1px solid #444;
+}
+/* Estilo específico para a pesquisa de armas */
+#weapon-search {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px; /* Largura máxima para melhor legibilidade */
+}
+
+#weapon-search input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff4500; /* Borda laranja para o campo de pesquisa */
+    background-color: #333; /* Fundo escuro para o campo */
+    color: #f4e2c1; /* Cor do texto */
+}
+
+#weapon-search input::placeholder {
+    color: #f4e2c1; /* Cor do placeholder */
+}
+
+#weapon-search button {
+    padding: 10px 20px;
+    background-color: #ff4500; /* Cor do botão */
+    color: #fff; /* Texto do botão em branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#weapon-search button:hover {
+    background-color: #e63900; /* Cor do botão ao passar o mouse */
+}
+
+/* Lista de resultados */
+#resultados {
+    margin-top: 20px;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d; /* Fundo escuro para os resultados */
+    color: #f4e2c1; /* Cor do texto dos resultados */
+    margin: 10px 0; /* Espaçamento entre os itens */
+    padding: 15px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para criar profundidade */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves ao passar o mouse */
+}
+
+.resultado:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(255, 69, 0, 0.5); /* Efeito de iluminação mais intenso */
+}
+
+.resultado img {
+    width: 80px; /* Tamanho fixo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra na imagem */
+}
+
