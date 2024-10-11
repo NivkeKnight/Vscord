@@ -351,4 +351,285 @@ button, input {
     border-radius: 8px; /* Bordas arredondadas para a imagem */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra na imagem */
 }
+/* Estilização da div de resultados */
+.resultado {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d; /* Fundo escuro para criar contraste com o texto */
+    color: #f4e2c1; /* Texto em cor clara */
+    margin: 15px 0; /* Espaçamento entre os itens */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.resultado:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(255, 69, 0, 0.5); /* Sombra mais forte ao passar o mouse */
+}
+
+.resultado div {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado h3 {
+    font-size: 22px;
+    color: #ff4500; /* Cor laranja vibrante para o nome da arma */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 4px #000; /* Sombra no texto do título */
+}
+
+.resultado p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilização para os tipos de ataque */
+.resultado p:nth-child(2) {
+    color: #f05a28; /* Vermelho para o ataque físico */
+}
+
+.resultado p:nth-child(3) {
+    color: #5f9ea0; /* Azul para ataque mágico */
+}
+
+.resultado p:nth-child(4) {
+    color: #ff6347; /* Vermelho fogo para o ataque de fogo */
+}
+
+.resultado p:nth-child(5) {
+    color: #f0e68c; /* Amarelo claro para o ataque de relâmpago */
+}
+
+.resultado p:nth-child(6) {
+    color: #daa520; /* Dourado para o bônus de ataque */
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #f4a261;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Seção Principal */
+#main-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#main-content h2 {
+    font-size: 2rem;
+    color: #f4a261;
+}
+
+#main-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+#main-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #1f1f1f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#main-content .btn:hover {
+    background-color: #e76f51;
+    color: #fff;
+}
+
+/* Destaque de Imagem */
+#highlight {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 50px 20px;
+}
+
+#highlight img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#highlight h3 {
+    color: #f4a261;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+#highlight p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer nav ul li a:hover {
+    color: #f4a261;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #f4a261;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Seção Principal */
+#main-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#main-content h2 {
+    font-size: 2rem;
+    color: #f4a261;
+}
+
+#main-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+#main-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #1f1f1f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#main-content .btn:hover {
+    background-color: #e76f51;
+    color: #fff;
+}
+
+/* Destaque de Imagem */
+#highlight {
+    text-align: center;
+   
+}
+
 
