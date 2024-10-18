@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisar Armas de Dark Souls</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Declaração do tipo de documento HTML5 -->
+    <meta charset="UTF-8"> <!-- Define a codificação como UTF-8 para suporte a caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>Pesquisar Armas de Dark Souls</title> <!-- Título da página que aparece na aba do navegador -->
+
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Inclusão da biblioteca jQuery para facilitar manipulação de DOM e AJAX -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <!-- Cabeçalho com título e menu de navegação -->
     <header>
-        <h1>Pesquisar Armas de Dark Souls</h1>
+        <h1>Pesquisar Armas de Dark Souls</h1> <!-- Título principal da página -->
         <nav>
             <ul>
+                <!-- Menu de navegação -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Itens</a></li>
                 <li><a href="weapons.html">Armas</a></li>
@@ -19,18 +26,23 @@
         </nav>
     </header>
 
+    <!-- Seção de busca por armas -->
     <section id="weapon-search">
-        <h2>Buscar Arma</h2>
+        <h2>Buscar Arma</h2> <!-- Título da seção -->
+        <!-- Campo de entrada de texto para o nome da arma e botão de busca -->
         <input type="text" id="ProcuraArma" placeholder="Digite o nome da arma..." />
-        <button id="search">Pesquisar</button>
+        <button id="search">Pesquisar</button> <!-- Botão de pesquisa -->
     </section>
 
+    <!-- Div onde os resultados da busca serão exibidos -->
     <div id="resultados"></div>
 
+    <!-- Rodapé com informações de copyright -->
     <footer>
         <p>&copy; 2024 - Dark Souls Lore TCC</p>
     </footer>
 
+    <!-- Link para o arquivo JavaScript externo -->
     <script src="./script.js"></script>
 </body>
 </html>

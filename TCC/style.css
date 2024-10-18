@@ -631,5 +631,23 @@ nav ul li a:hover {
     text-align: center;
    
 }
+.destaque-lore {
+    background-color: #1e1e2e;  /* Fundo escuro */
+    color: #e0e0e0;  /* Texto cinza claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
+.destaque-lore h2 {
+    color: #daa520;  /* Cor do título em dourado */
+    margin-bottom: 10px;
+}
+
+.destaque-lore p {
+    line-height: 1.6;
+}
+
+/* ai eu pergunto para que eu fui inventar de fazer um site complicado desse/*
 

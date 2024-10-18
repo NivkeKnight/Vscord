@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itens de Dark Souls</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Declaração de HTML5 e definições básicas -->
+    <meta charset="UTF-8"> <!-- Codificação de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>Itens de Dark Souls</title> <!-- Título exibido na aba do navegador -->
+    
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Inclusão do jQuery a partir de um CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+    <!-- Elemento de sobreposição (pode ser usado para modais ou carregamento) -->
     <div class="overlay"></div>
+
+    <!-- Cabeçalho com título e menu de navegação -->
     <header>
-        <h1>Itens de Dark Souls</h1>
+        <h1>Itens de Dark Souls</h1> <!-- Título principal da página -->
         <nav>
             <ul>
+                <!-- Menu com links para diferentes páginas -->
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="index.html">Itens</a></li>
                 <li><a href="weapons.html">Armas</a></li>
@@ -20,27 +29,35 @@
         </nav>
     </header>
 
+    <!-- Seção de introdução -->
     <section>
-        <h2>Explore o mundo de Dark Souls</h2>
+        <h2>Explore o mundo de Dark Souls</h2> <!-- Subtítulo introdutório -->
     </section>
 
+    <!-- Seção de busca de itens -->
     <section id="item-search">
-        <h2>Buscar Item</h2>
+        <h2>Buscar Item</h2> <!-- Título da seção -->
+        
+        <!-- Campo de entrada de texto e botão para pesquisar itens -->
         <input type="text" id="ProcuraItem" placeholder="Digite o nome do item">
         <button id="pesquisar">Pesquisar</button>  
     </section>
 
+    <!-- Seção para exibir a lista de itens encontrados -->
     <section id="item-list">
-        <h2>Lista de Itens</h2>
-        <div id="resultados"></div>
- 
+        <h2>Lista de Itens</h2> <!-- Título da lista -->
+        <div id="resultados"></div> <!-- Div onde os resultados da busca serão exibidos -->
     </section>
 
+    <!-- Rodapé com informações adicionais -->
     <footer>
-        <p>&copy; 2024 - Dark Souls Lore TCC</p>
+        <p>&copy; 2024 - Dark Souls Lore TCC</p> <!-- Informações de copyright -->
     </footer>
 
+    <!-- Inclusão do script JS externo -->
     <script src="script.js"></script>
+
+    <!-- Link duplicado para "Armas" (talvez deva ser removido, pois já existe no menu) -->
     <li><a href="weapons.html">Armas</a></li>
 
 </body>
