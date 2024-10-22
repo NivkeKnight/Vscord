@@ -4,7 +4,7 @@
   "description": "recurso para listar armas de dark souls",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "joão pedro",
   "license": "ISC",
